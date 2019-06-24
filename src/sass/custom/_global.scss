@@ -1,0 +1,49 @@
+/* Sticky footer */
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.main {
+  flex: 1 0 auto;
+}
+// 
+
+/* Masonry */ 
+// .grid-item { 
+//   width: 200px; 
+// }
+// .grid-item--width2 { width: 400px; }
+/* fluid 5 columns */
+// .grid-sizer,
+// .grid-item { 
+//   width: 20%;
+  
+// }
+// .grid-item,
+// .grid-item--width-2 {
+// padding-left: .25%; 
+// padding-right: .25%; 
+// padding-bottom: .5%; 
+// box-sizing: border-box;
+// cursor: pointer;
+// }
+/* 2 columns */
+// .grid-item--width2 { width: 40%; }
+// 
+.grid-sizer,
+.grid-item { width: 22%; }
+
+.gutter-sizer { width: 4%; }
+
+.grid-item--width2 { width: 48%; }
+
+
+
+
+body {
+    font-family: 'Comfortaa', 'Open Sans', sans-serif;
+}
