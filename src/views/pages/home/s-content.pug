@@ -1,38 +1,44 @@
 .container-fluid
-  .row.mb-3
-    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
-      ol.carousel-indicators
-        li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
-        li(data-target='#carouselExampleIndicators', data-slide-to='1')
-        li(data-target='#carouselExampleIndicators', data-slide-to='2')
-        li(data-target='#carouselExampleIndicators', data-slide-to='3')
-      .carousel-inner
-        .carousel-item.active
-          img.d-block.w-100(src='img/1.jpg', alt='First slide')
-          .carousel-caption.d-none.d-md-block
-            h5 МОУ СОШ №3 г. Ростова
-            p Музей космонавтики
-        //- .carousel-item
-        //-   img.d-block.w-100.img-fluid(src='img/2.jpg', alt='Second slide')
-        //-   .carousel-caption.d-none.d-md-block
-        //-     h5 МОУ СОШ №3 г. Ростова
-        //-     p Музей космонавтики
-        //- .carousel-item
-        //-   img.d-block.w-100.img-fluid(src='img/3.jpg', alt='Second slide')
-        //-   .carousel-caption.d-none.d-md-block
-        //-     h5 МОУ СОШ №3 г. Ростова
-        //-     p Музей космонавтики
-        //- .carousel-item
-        //-   img.d-block.w-100.img-fluid(src='img/4.jpg', alt='Second slide')
-        //-   .carousel-caption.d-none.d-md-block
-        //-     h5 МОУ СОШ №3 г. Ростова
-        //-     p Музей космонавтики
-      a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
-        span.carousel-control-prev-icon(aria-hidden='true')
-        span.sr-only Previous
-      a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
-        span.carousel-control-next-icon(aria-hidden='true')
-        span.sr-only Next
+
+  .row
+    .owl-carousel.owl-theme
+      .item(style='background: url(img/1.jpg) center no-repeat; background-size: cover;')
+      .item
+
+  //- .row.mb-3
+  //-   #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+  //-     ol.carousel-indicators
+  //-       li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+  //-       li(data-target='#carouselExampleIndicators', data-slide-to='1')
+  //-       li(data-target='#carouselExampleIndicators', data-slide-to='2')
+  //-       li(data-target='#carouselExampleIndicators', data-slide-to='3')
+  //-     .carousel-inner
+  //-       .carousel-item.active
+  //-         img.d-block.w-100(src='img/1.jpg', alt='First slide')
+  //-         .carousel-caption.d-none.d-md-block
+  //-           h5 МОУ СОШ №3 г. Ростова
+  //-           p Музей космонавтики
+  //-       //- .carousel-item
+  //-       //-   img.d-block.w-100.img-fluid(src='img/2.jpg', alt='Second slide')
+  //-       //-   .carousel-caption.d-none.d-md-block
+  //-       //-     h5 МОУ СОШ №3 г. Ростова
+  //-       //-     p Музей космонавтики
+  //-       //- .carousel-item
+  //-       //-   img.d-block.w-100.img-fluid(src='img/3.jpg', alt='Second slide')
+  //-       //-   .carousel-caption.d-none.d-md-block
+  //-       //-     h5 МОУ СОШ №3 г. Ростова
+  //-       //-     p Музей космонавтики
+  //-       //- .carousel-item
+  //-       //-   img.d-block.w-100.img-fluid(src='img/4.jpg', alt='Second slide')
+  //-       //-   .carousel-caption.d-none.d-md-block
+  //-       //-     h5 МОУ СОШ №3 г. Ростова
+  //-       //-     p Музей космонавтики
+  //-     a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+  //-       span.carousel-control-prev-icon(aria-hidden='true')
+  //-       span.sr-only Previous
+  //-     a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+  //-       span.carousel-control-next-icon(aria-hidden='true')
+  //-       span.sr-only Next
   
   //- .row
   //-   .col.mb-4
@@ -73,4 +79,5 @@
         a(href='img/trip-kirzach.jpg', title='25-й час как успевать и учить, и учиться. Управление собой и своим временем')
             img.w-100.mb-2(src='img/trip-kirzach.jpg')
             p.text-center 25-й час как успевать и учить, и учиться. Управление собой и своим временем
+
 
