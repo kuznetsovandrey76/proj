@@ -37,10 +37,9 @@ $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
-        autoplay:true,
+        // autoplay:true,
         autoplayTimeout:2000,
-        // center: true,
-        // nav:true,
+        nav:true,
         responsive:{
             0:{
                 items:1
