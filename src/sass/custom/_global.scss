@@ -10,83 +10,12 @@ body {
 .main {
   flex: 1 0 auto;
 }
-// 
-
-/* Masonry */ 
-// .grid-item { 
-//   width: 200px; 
-// }
-// .grid-item--width2 { width: 400px; }
-/* fluid 5 columns */
-// .grid-sizer,
-// .grid-item { 
-//   width: 20%;
-  
-// }
-// .grid-item,
-// .grid-item--width-2 {
-// padding-left: .25%; 
-// padding-right: .25%; 
-// padding-bottom: .5%; 
-// box-sizing: border-box;
-// cursor: pointer;
-// }
-/* 2 columns */
-// .grid-item--width2 { width: 40%; }
-// 
-.grid-sizer,
-.grid-item { width: 22%; }
-
-.gutter-sizer { width: 4%; }
-
-.grid-item--width2 { width: 48%; }
-
 
 
 
 body {
     font-family: 'Comfortaa', 'Open Sans', sans-serif;
 }
-
-.carousel-item {
-  // width: 100%;
-  // background-size: cover; 
-  // height: 100vh;
-  // background-position: center 100%;
-  
-}
-// .carousel,
-.carousel-inner {
-  // width: 100%;
-  // height: 400px;
-  // height: 100%;
-  // position: absolute;
-  
-}
-
-img {
-  // vertical-align: middle;
-}
-
-nav {
-  // height: 8vh;
-}
-
-.carousel {
-  // height: 92vh;
-}
-
-.item {
-  // text-align: center;
-  // background-size: cover; 
-  // height: 85vh;
-  // width: 100%;
-}
-
-// .owl-dots {
-//   margin-top: -20px;
-//   z-index: 5;
-// }
 
 .promo-slider {
   position: relative;
@@ -118,7 +47,6 @@ nav {
 .promo-slider-inner {
   position: absolute;
   top: 50%;
-  // text-transform: uppercase;
   z-index: 4;
   margin-top: 2rem;
   width: 100%;
@@ -126,3 +54,84 @@ nav {
   text-align: center;
   transform: translateY(-50%);
 }
+
+.brick {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &-inner {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    height: 100%;
+    width: 100% ;
+    margin: 0 auto;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    &-tx {
+      margin-bottom: 0;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      max-width: 90%;
+    }
+  }
+}
+
+.footer {
+  background: #2c364a;
+  color: white;
+  // border-top: 1px solid rgba(5, 5, 5, .3); 
+
+  & a {
+    color: #969ba5;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  & .msg a:hover {
+    color: orange;
+  }
+}
+
+
+.address,
+.phone,
+.mail,
+.msg {
+  display: flex;
+  color: #969ba5;
+
+  &:before {
+    font-family: "FontAwesome";
+    margin-right: 8px;
+  }
+}
+
+.address {
+  color: white;
+  &:before {
+    content: '\f041';
+  }  
+}
+
+.phone {
+  &:before {
+    content: '\f095';
+  }  
+}
+
+.mail {
+  &:before {
+    content: '\f003';
+  }  
+}
+
