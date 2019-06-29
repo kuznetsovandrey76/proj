@@ -1,3 +1,4 @@
+
 /* Sticky footer */
 html {
   height: 100%;
@@ -11,6 +12,16 @@ body {
   flex: 1 0 auto;
 }
 
+
+a {
+  color: white;
+
+  &:hover {
+    text-decoration: none;
+    color: lightblue;
+    font-weight: 900;
+  }
+}
 
 
 body {
@@ -60,8 +71,16 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+  // margin: 0 10px 0 10px;
+  box-sizing: border-box !important;
 
+  
   &-inner {
+    &:hover {
+  
+      // transform: scale(1.1);
+    }
+
     position: absolute;
     z-index: 2;
     display: flex;
@@ -72,6 +91,25 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+  
+    
+    
+    &:before {
+      border-radius: 10px;
+      border: 1px solid rgba(5, 5, 5, 0.25);
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      background-color: rgba(5, 5, 5, 0.25);
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+    }
+
     
     &-tx {
       margin-bottom: 0;
@@ -79,6 +117,8 @@ body {
       font-size: 24px;
       text-align: center;
       max-width: 90%;
+      z-index: 5;
+      cursor: pointer;
     }
   }
 }
@@ -135,3 +175,6 @@ body {
   }  
 }
 
+.youtube {
+  margin: 0 auto;
+}
