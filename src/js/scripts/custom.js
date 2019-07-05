@@ -52,4 +52,17 @@ $(document).ready(function() {
             // }
         }
     })
+
+
+    $("#popup1").hide();
+
+
+    $('.PopUpShow').click(function() {
+        $("#popup1").show();
+    });
+    $('.PopUpHide').click(function() {
+        $("#popup1").hide();
+    });
+
+
 });
