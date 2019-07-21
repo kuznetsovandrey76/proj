@@ -54,17 +54,17 @@ $(document).ready(function() {
     })
 
 
-    $("#popup1").hide();
+    $(".test").hide();
 
 
     // $('.PopUpShow').click(function() {
     //     $("#popup1").show();
     // });
     $('.msg').click(function() {
-        $("#popup1").show();
+        $(".test").show();
     });
     $('.PopUpHide').click(function() {
-        $("#popup1").hide();
+        $(".test").hide();
     });
     $('.form__submit').click(function() {
         // $("#popup1").hide();

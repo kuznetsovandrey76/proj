@@ -17,47 +17,44 @@
     //-             input.send-message(type='submit', name='send', value='Отправить')
 
     .row
-        //- .b-container
-            //- | Sample Text
-            //- p.PopUpShow Show popup
-        #popup1.b-popup
-            .b-popup-content
-                //- | Text in Popup
-                p.PopUpHide x
-                .bs-callout.bs-callout-warning.hidden 
-                    h4 Упс!
-                    p Проверьте правильность заполнения полей :(
-                .bs-callout.bs-callout-info.hidden 
-                    h4 Ок!
-                    p Все данные введены верно :)
-                script(type='text/javascript').
-                    var submitted = false;
-                iframe#hidden_iframe(name='hidden_iframe', style='display:none;', onload="if(submitted)  {window.location = window.location.href;}")
-                div.form
-                    h2.mb-0.text-center Обратная связь
-                    form#demo-form(data-parsley-validate, action='https://docs.google.com/forms/u/1/d/e/1FAIpQLSeOJAziw6S9AivDLOzi3uOZtzp5WBjnbUZb_Z26eCovled6cQ/formResponse', method='post', target='hidden_iframe', onsubmit='submitted=true;')
-                        div.w-100
-                            label.d-block.mb-0.text-left(for='name') 
-                                span Имя 
-                                span.text-danger *
-                            input.w-100(name='entry.1346731159', type='text', id='name', required, data-parsley-required-message='Введите имя', placeholder='Введите имя:', style='border:none; border-bottom:1px solid green;')
-                        div.w-100
-                            label.d-block.mb-0.text-left(for='email')  
-                                span e-mail 
-                                span.text-danger *
-                            input.w-100(name='entry.898331469', type='email', id='email', required, placeholder='example@mail.ru', data-parsley-required-message='Введите e-mail', style='border:none; border-bottom:1px solid green;')
-                        div.w-100
-                            label.d-block.mb-0.text-left(for='phone')  
-                                span Телефон
-                            input.w-100(name='entry.754045880', type='text', id='phone', placeholder='88001234567', style='border:none; border-bottom:1px solid green;')
-                        div.w-100
-                            label.d-block.mb-0.text-left(for='msg')  
-                                span Сообщение 
-                                span.text-danger *
-                            textarea.w-100(name='entry.815915639', id='msg', placeholder='Введите сообщение:', data-parsley-required-message='Введите сообщение', rows='2', required, style='border:none; border-bottom:1px solid green; resize: none;')
-                        div
-                            p.mb-2.text-danger.text-left * обязательные поля
-                        input.p-1.w-100.bg-success.mb-1.form__submit(type='submit', value='Отправить')
+        .test
+            #popup1.b-popup
+                .b-popup-content
+                    p.PopUpHide x
+                    .bs-callout.bs-callout-warning.hidden 
+                        h4 Упс!
+                        p Проверьте правильность заполнения полей :(
+                    .bs-callout.bs-callout-info.hidden 
+                        h4 Ок!
+                        p Все данные введены верно :)
+                    script(type='text/javascript').
+                        var submitted = false;
+                    iframe#hidden_iframe(name='hidden_iframe', style='display:none;', onload="if(submitted)  {window.location = window.location.href;}")
+                    div.form
+                        h2.mb-0.text-center Обратная связь
+                        form#demo-form(data-parsley-validate, action='https://docs.google.com/forms/u/1/d/e/1FAIpQLSeOJAziw6S9AivDLOzi3uOZtzp5WBjnbUZb_Z26eCovled6cQ/formResponse', method='post', target='hidden_iframe', onsubmit='submitted=true;')
+                            div.w-100
+                                label.d-block.mb-0.text-left(for='name') 
+                                    span Имя 
+                                    span.text-danger *
+                                input.w-100(name='entry.1346731159', type='text', id='name', required, data-parsley-required-message='обязательное поле', placeholder='Введите имя:', style='border:none; border-bottom:1px solid green;')
+                            div.w-100
+                                label.d-block.mb-0.text-left(for='email')  
+                                    span e-mail 
+                                    span.text-danger *
+                                input.w-100(name='entry.898331469', type='email', id='email', required, placeholder='example@mail.ru', data-parsley-required-message='обязательное поле', style='border:none; border-bottom:1px solid green;')
+                            div.w-100
+                                label.d-block.mb-0.text-left(for='phone')  
+                                    span Телефон
+                                input.w-100(name='entry.754045880', type='text', id='phone', placeholder='88001234567', style='border:none; border-bottom:1px solid green;')
+                            div.w-100
+                                label.d-block.mb-0.text-left(for='msg')  
+                                    span Сообщение 
+                                    span.text-danger *
+                                input.w-100.mb-0(name='entry.815915639', id='msg', placeholder='Введите сообщение:', data-parsley-required-message='обязательное поле', rows='1', required, style='border:none; border-bottom:1px solid green; resize: none; padding-bottom: 0;')
+                            //- div
+                                //- p.mb-2.text-danger.text-left * обязательные поля
+                            input.p-1.w-100.bg-success.my-1.form__submit(type='submit', value='Отправить')
 
 
     .row
