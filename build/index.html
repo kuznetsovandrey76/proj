@@ -35,12 +35,46 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="b-container">Sample Text
-                    <p class="PopUpShow">Show popup</p>
-                </div>
                 <div class="b-popup" id="popup1">
-                    <div class="b-popup-content">Text in Popup
-                        <p class="PopUpHide">Hide popup</p>
+                    <div class="b-popup-content">
+                        <p class="PopUpHide">x</p>
+                        <div class="bs-callout bs-callout-warning hidden">
+                            <h4>Упс!</h4>
+                            <p>Проверьте правильность заполнения полей :(</p>
+                        </div>
+                        <div class="bs-callout bs-callout-info hidden">
+                            <h4>Ок!</h4>
+                            <p>Все данные введены верно :)</p>
+                        </div>
+                        <script type="text/javascript">
+                            var submitted = false;
+                        </script>
+                        <iframe id="hidden_iframe" name="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location = window.location.href;}"></iframe>
+                        <div class="form">
+                            <h2 class="mb-0 text-center">Обратная связь</h2>
+                            <form id="demo-form" data-parsley-validate action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeOJAziw6S9AivDLOzi3uOZtzp5WBjnbUZb_Z26eCovled6cQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                                <div class="w-100">
+                                    <label class="d-block mb-0 text-left" for="name"> <span>Имя </span><span class="text-danger">*</span></label>
+                                    <input class="w-100" name="entry.1346731159" type="text" id="name" required data-parsley-required-message="Введите имя" placeholder="Введите имя:" style="border:none; border-bottom:1px solid green;">
+                                </div>
+                                <div class="w-100">
+                                    <label class="d-block mb-0 text-left" for="email"> <span>e-mail </span><span class="text-danger">*</span></label>
+                                    <input class="w-100" name="entry.898331469" type="email" id="email" required placeholder="example@mail.ru" data-parsley-required-message="Введите e-mail" style="border:none; border-bottom:1px solid green;">
+                                </div>
+                                <div class="w-100">
+                                    <label class="d-block mb-0 text-left" for="phone"> <span>Телефон</span></label>
+                                    <input class="w-100" name="entry.754045880" type="text" id="phone" placeholder="88001234567" style="border:none; border-bottom:1px solid green;">
+                                </div>
+                                <div class="w-100">
+                                    <label class="d-block mb-0 text-left" for="msg"> <span>Сообщение </span><span class="text-danger">*</span></label>
+                                    <textarea class="w-100" name="entry.815915639" id="msg" placeholder="Введите сообщение:" data-parsley-required-message="Введите сообщение" rows="2" required style="border:none; border-bottom:1px solid green; resize: none;"></textarea>
+                                </div>
+                                <div>
+                                    <p class="mb-2 text-danger text-left">* обязательные поля</p>
+                                </div>
+                                <input class="p-1 w-100 bg-success mb-1 form__submit" type="submit" value="Отправить">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,6 +177,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/plugins/parsley.min.js"></script>
     <script src="js/plugins/responsiveslides.min.js"></script>
     <script src="js/plugins/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>

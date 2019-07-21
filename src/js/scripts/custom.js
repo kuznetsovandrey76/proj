@@ -57,11 +57,17 @@ $(document).ready(function() {
     $("#popup1").hide();
 
 
-    $('.PopUpShow').click(function() {
+    // $('.PopUpShow').click(function() {
+    //     $("#popup1").show();
+    // });
+    $('.msg').click(function() {
         $("#popup1").show();
     });
     $('.PopUpHide').click(function() {
         $("#popup1").hide();
+    });
+    $('.form__submit').click(function() {
+        // $("#popup1").hide();
     });
 
 
